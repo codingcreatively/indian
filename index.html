@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Independence Day | Kickoff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: url('https://i.ibb.co/Q7Bd9bfR/images.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      animation: fadeIn 2s ease-in;
+      overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text readability */
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #fff700;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+
+    .countdown {
+      font-size: 2.5em;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .countdown { font-size: 1.8em; }
+    }
+  </style>
+
+  <script>
+    let seconds = 3;
+    function countdownTimer() {
+      const countdownEl = document.getElementById('countdown');
+      countdownEl.innerText = seconds;
+      if (seconds === 0) {
+        window.location.href = 'home.html'; // Change this to your redirect file
+      } else {
+        seconds--;
+        setTimeout(countdownTimer, 1000);
+      }
+    }
+
+    window.onload = countdownTimer;
+  </script>
+</head>
+<body>
+  <div class="content">
+    <h1>Happy Independence Day 🇮🇳</h1>
+    <p>Your journey begins shortly...</p>
+    <div class="countdown" id="countdown">3</div>
+  </div>
+</body>
+</html>

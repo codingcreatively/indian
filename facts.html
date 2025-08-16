@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freedom Facts | Independence Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #222;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #002f4b;
+      margin-bottom: 10px;
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .fact-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .fact-number {
+      font-size: 1.5em;
+      color: #dc4225;
+      font-weight: bold;
+    }
+
+    .fact-text {
+      margin-top: 10px;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    .back-btn {
+      margin: 30px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #ff9933, #138808);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px #138808;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .fact-text { font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🇮🇳 Freedom Facts</h1>
+    <p>Interesting facts from India's freedom movement</p>
+  </div>
+
+  <div class="fact-grid">
+    <div class="fact-card">
+      <div class="fact-number">1</div>
+      <div class="fact-text">India got independence on August 15, 1947, after almost 200 years of British rule.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">2</div>
+      <div class="fact-text">Mahatma Gandhi led the Dandi March in 1930 to protest the British salt tax.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">3</div>
+      <div class="fact-text">The Indian National Congress was formed in 1885, and played a crucial role in the freedom movement.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">4</div>
+      <div class="fact-text">Bhagat Singh was only 23 when he was executed, becoming a national hero for his bravery.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">5</div>
+      <div class="fact-text">India's tricolour flag was first hoisted on August 7, 1906 in Kolkata.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">6</div>
+      <div class="fact-text">Subhas Chandra Bose created the Indian National Army to fight British forces.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">7</div>
+      <div class="fact-text">The Quit India Movement was launched by Gandhi on August 8, 1942, demanding British withdrawal.</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">8</div>
+      <div class="fact-text">At the time of independence, India had no national anthem; "Jana Gana Mana" was officially adopted in 1950.</div>
+    </div>
+  </div>
+
+  <a href="tribute.html" class="back-btn">⬅️ Back to Tribute</a>
+
+</body>
+</html>

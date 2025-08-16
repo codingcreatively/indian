@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tribute | Independence Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+      color: #000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #002f4b;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 3px solid #002f4b;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #ccc;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+      color: #dc4225;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    .games-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .games-section h2 {
+      margin-bottom: 20px;
+      color: #002f4b;
+    }
+
+    .game-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .game-buttons a {
+      text-decoration: none;
+      background: linear-gradient(to right, #ff9933, #138808);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+    a.button {
+      padding: 14px 28px;
+      font-size: 1em;
+      color: #fff;
+      background: linear-gradient(135deg, #dd2476, #ff512f);
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: inline-block;
+    }
+
+    a.button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #ff512f;
+    }
+
+    .game-buttons a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 600px) {
+      .card img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tribute to Indian Freedom Fighters 🇮🇳</h1>
+    <div class="cards">
+
+      <div class="card">
+        <img src="your-image-path-1.jpg" alt="Bhagat Singh"/>
+        <h3>Bhagat Singh</h3>
+        <p>(1907 – 1931)</p>
+        <p>Revolutionary hero who fought British rule and became a symbol of youth-led freedom movement.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-2.jpg" alt="Mahatma Gandhi"/>
+        <h3>Mahatma Gandhi</h3>
+        <p>(1869 – 1948)</p>
+        <p>Leader of the non-violent independence movement and architect of India's freedom struggle.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-3.jpg" alt="Subhas Chandra Bose"/>
+        <h3>Subhas Chandra Bose</h3>
+        <p>(1897 – 1945)</p>
+        <p>Founder of INA, inspired armed resistance against British with the slogan "Give me blood...".</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-4.jpg" alt="Rani Lakshmibai"/>
+        <h3>Rani Lakshmibai</h3>
+        <p>(1828 – 1858)</p>
+        <p>Queen of Jhansi, known for her bravery and leadership during the 1857 revolt.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-5.jpg" alt="Sardar Vallabhbhai Patel"/>
+        <h3>Sardar Vallabhbhai Patel</h3>
+        <p>(1875 – 1950)</p>
+        <p>Iron Man of India who unified the nation and played key role in political integration.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-6.jpg" alt="Jawaharlal Nehru"/>
+        <h3>Jawaharlal Nehru</h3>
+        <p>(1889 – 1964)</p>
+        <p>India’s first Prime Minister and visionary behind modern India’s foundation.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-7.jpg" alt="Dr. B. R. Ambedkar"/>
+        <h3>Dr. B. R. Ambedkar</h3>
+        <p>(1891 – 1956)</p>
+        <p>Chief architect of the Constitution and voice for social justice and equality.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-8.jpg" alt="Chandra Shekhar Azad"/>
+        <h3>Chandra Shekhar Azad</h3>
+        <p>(1906 – 1931)</p>
+        <p>Young revolutionary who refused to be captured alive by the British forces.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-9.jpg" alt="Lal Bahadur Shastri"/>
+        <h3>Lal Bahadur Shastri</h3>
+        <p>(1904 – 1966)</p>
+        <p>Gave the slogan "Jai Jawan Jai Kisan", promoted peace, simplicity, and patriotism.</p>
+      </div>
+
+      <div class="card">
+        <img src="your-image-path-10.jpg" alt="Bal Gangadhar Tilak"/>
+        <h3>Bal Gangadhar Tilak</h3>
+        <p>(1856 – 1920)</p>
+        <p>First leader to demand complete independence and declared "Swaraj is my birthright."</p>
+      </div>
+
+    </div>
+
+    <div class="games-section">
+      <h2>🇮🇳 Celebrate with Knowledge & Fun</h2>
+      <div class="game-buttons">
+        <a href="quiz.html">🧠 Quiz</a>
+        <a href="facts.html">📘 Facts</a>
+        <a href="memory.html">Indian Army</a>
+        <a href="home.html" class="button">← Back to Home</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
